@@ -1,0 +1,161 @@
+body{
+  margin: 0;
+  background-color: #000000;
+
+  background-image:
+    radial-gradient(white 1px, transparent 1px),
+    radial-gradient(white 1px, transparent 1px),
+    radial-gradient(white 2px, transparent 2px),
+    radial-gradient(white 1px, transparent 1px);
+
+  background-size:
+    97px 131px,
+    163px 211px,
+    281px 337px,
+    419px 389px;
+
+  background-position:
+    0 0,
+    37px 83px,
+    140px 55px,
+    210px 190px;
+}
+body::before{
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 200%;
+  background-image:
+    radial-gradient(white 1px, transparent 1px),
+    radial-gradient(white 1px, transparent 1px);
+  background-size: 100px 100px, 150px 150px;
+  background-position: 0 0, 50px 75px;
+  opacity: 0.3;
+  animation: moveStars 120s linear infinite;
+  z-index: -1;
+}
+
+
+@keyframes moveStars{
+  from{
+    transform: translate(0, 0);
+  }
+  to{
+    transform: translate(-200px, -200px);
+  }
+}
+.page{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding-top: 12vh;
+}
+.wrapper{
+    text-align: center;
+}
+.card{
+  border: 4px solid black;
+  padding: 10px;
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 620px;
+  max-width: 92%;
+  box-shadow:
+    0 20px 60px rgba(0,0,0,0.6),
+    0 0 40px rgba(255,255,255,0.05);
+  animation: fadeIn 1.2s ease forwards;
+  opacity: 0;
+  filter: hue-rotate(260deg) saturate(1.5);
+
+}
+@keyframes fadeIn{
+  from{
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card-inner{
+  border: 2px solid black;
+  padding: 16px;
+  background-color: white;
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100px;
+}
+.card-info p{
+  margin: 0;
+  text-align: left;
+}
+
+.card-info{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 20px;
+} 
+
+.card-top{
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.card-left{
+  display:flex;
+  gap:25px;
+  align-items:flex-start;
+}
+.card-photo img{
+  width: 120px;
+  height: auto;
+  display: block;
+}
+.card-nav{
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-self: center;
+  font-size: 30px;
+  text-align: right;
+  transition: all 0.3s ease;
+}
+
+.card-nav a{
+  color: black;
+  text-decoration: underline;
+}
+.card-nav a:hover{
+  letter-spacing: 1px;
+}
+
+.card-footer{
+  margin-top: auto;
+  text-align: left;
+  font-size: 19px;
+}
+.name h1{
+  font-size: 22px;
+  margin: 0 0 6px 0;
+  text-align: left;
+  color: #0d2848;
+}
+.welcome{
+  color:rgb(230, 229, 237);
+}
+
+.about-content{
+  color: white;
+}
