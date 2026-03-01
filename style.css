@@ -243,6 +243,7 @@ body::before{
   text-align: center;
   margin-top: 10vh;
   margin-bottom: 40px;
+  text-align: center;
 }
 
 /* Grid: left->right, then wraps down automatically */
@@ -325,6 +326,7 @@ body::before{
   font-size: 42px;
   letter-spacing: 0.5px;
   color: white;
+
 }
 
 .project-subtitle{
