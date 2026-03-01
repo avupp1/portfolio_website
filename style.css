@@ -119,7 +119,6 @@ body::before{
   width: 120px;
   height: auto;
   display: block;
-  filter: hue-rotate(260deg) saturate(1.5);
 }
 .card-nav{
   margin-left: auto;
