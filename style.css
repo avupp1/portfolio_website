@@ -305,3 +305,95 @@ body::before{
   background: rgba(255,255,255,0.08);
   transform: translateY(-2px);
 }
+
+/* Project detail page layout */
+.project-page{
+  width: min(1100px, 92%);
+  margin: 0 auto;
+  padding: 60px 0 90px;
+  color: #fff;
+}
+
+/* Header */
+.project-header{
+  margin-bottom: 28px;
+  color: white;
+}
+
+.project-title{
+  margin: 14px 0 6px;
+  font-size: 42px;
+  letter-spacing: 0.5px;
+  color: white;
+}
+
+.project-subtitle{
+  margin: 0;
+  opacity: 0.85;
+  font-size: 16px;
+  color: white;
+}
+
+/* Main content card */
+.project-card-detail{
+  border-radius: 18px;
+  padding: 26px 26px 10px;
+  background: rgba(0,0,0,0.40);
+  border: 1px solid rgba(255,255,255,0.12);
+  box-shadow: 0 20px 70px rgba(0,0,0,0.65);
+  backdrop-filter: blur(6px);
+  color: white;
+}
+
+/* Sections */
+.project-section{
+  padding: 18px 6px 26px;
+  border-bottom: 1px solid rgba(255,255,255,0.10);
+}
+
+.project-section:last-child{
+  border-bottom: none;
+}
+
+.project-section h2{
+  margin: 0 0 10px;
+  font-size: 22px;
+}
+
+.project-section p{
+  margin: 0 0 10px;
+  line-height: 1.65;
+  opacity: 0.92;
+}
+
+.project-section ul{
+  margin: 8px 0 10px 22px;
+  padding: 0;
+}
+
+.project-section li{
+  margin: 6px 0;
+  line-height: 1.5;
+  color: white;
+}
+
+/* Attachments */
+.attachments{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.attachments a{
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.18);
+  background: rgba(255,255,255,0.06);
+}
+
+.attachments a:hover{
+  border-color: rgba(255,255,255,0.5);
+  background: rgba(255,255,255,0.10);
+}
