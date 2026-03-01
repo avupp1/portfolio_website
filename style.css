@@ -70,7 +70,6 @@ body::before{
     0 0 40px rgba(255,255,255,0.05);
   animation: fadeIn 1.2s ease forwards;
   opacity: 0;
-  filter: hue-rotate(260deg) saturate(1.5);
 
 }
 @keyframes fadeIn{
@@ -120,6 +119,7 @@ body::before{
   width: 120px;
   height: auto;
   display: block;
+  filter: hue-rotate(260deg) saturate(1.5);
 }
 .card-nav{
   margin-left: auto;
@@ -237,4 +237,72 @@ body::before{
 .fade-in {
   opacity: 0;                 /* starts invisible */
   animation: fadeUp 0.9s ease forwards;
+}
+
+.page-title{
+  color: white;
+  text-align: center;
+  margin-top: 10vh;
+  margin-bottom: 40px;
+}
+
+/* Grid: left->right, then wraps down automatically */
+.all-projects{
+  width: min(1100px, 92%);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
+  padding-bottom: 80px;
+}
+
+/* Each project “column” */
+.project{
+  text-align: left;
+  color: white;
+}
+
+/* Planet/icon */
+.planet{
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  margin-bottom: 10px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+}
+
+/* Text */
+.project-name{
+  font-size: 18px;
+  margin: 0 0 8px 0;
+}
+
+.project-date{
+  margin: 0 0 10px 0;
+  opacity: 0.85;
+}
+
+.project-description{
+  margin: 0;
+  line-height: 1.4;
+  opacity: 0.9;
+}
+
+.learn-more{
+  display: inline-block;
+  margin-top: 14px;
+  padding: 6px 12px;
+  border: 1px solid rgba(255,255,255,0.25);
+  border-radius: 8px;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  transition: all 0.25s ease;
+}
+
+.learn-more:hover{
+  background: rgba(255,255,255,0.08);
+  transform: translateY(-2px);
 }
