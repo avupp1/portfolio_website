@@ -188,7 +188,7 @@ body::before{
 }
 
 .about-image img{
-  width: 1000px;       
+  width: 420px;       
   max-width: 100%;
   height: auto;
   display: block;
@@ -211,4 +211,15 @@ body::before{
 
 .about-content p{
   margin: 0 0 18px 0;
+}
+.back-btn{
+  display: inline-block;
+  margin-top: 20px;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  border: 1px solid white;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
 }
