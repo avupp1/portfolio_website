@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <title>Autonomous Obstacle Avoiding Smart Car</title>
+  </head>
+
+  <body>
+    <div class="fade-in">
+      <header class="project-header">
+        <a class="back-btn" href="projects.html">← Back to Projects</a>
+        <h1 class="project-title">Autonomous Obstacle Avoiding Smart Car</h1>
+      </header>
+      <main class="project-card-detail">
+        <section class="project-section">
+          <h2>Executive Summary</h2>
+          <p>
+            This project involved designing and implementing an Arduino-based smart robot car capable of autonomous obstacle avoidance and remote control operation. 
+            The system integrates ultrasonic sensing, infrared sensors, wireless communication, and motor control to enable real-time navigation and decision making. By combining embedded control logic with sensor feedback, the vehicle can detect nearby obstacles and automatically adjust its direction to prevent collisions.
+
+          </p>
+        </section>
+
+        <section class="project-section">
+          <h2>Mission Context</h2>
+          <p>
+          Autonomous mobile systems require the coordination of sensing, control, and actuation to navigate dynamic environments. Small robotic platforms provide an effective framework for studying embedded systems, sensor integration, and decision-based motion control. 
+          This project demonstrates how mechatronic subsystems can work together to create an intelligent robotic platform capable of autonomous movement and remote user interaction.
+          </p>
+        </section>
+
+        <section class="project-section">
+          <h2>System Architecture</h2>
+          <p>The vehicle was designed around an Arduino Uno microcontroller, which served as the central control unit for the system. <br> Key components included:
+        <ul>
+            <li>Ultrasonic sensor (HC-SR04) for obstacle detection and distance measurement</li>
+
+            <li>SG90 servo motor to rotate the ultrasonic sensor and scan the environment</li>
+
+            <li>L298N motor driver to regulate power delivery and directional control for the motors</li>
+
+            <li>TT DC motors to drive the wheels and generate motion</li>
+
+            <li>HC-05 Bluetooth module for wireless user control</li>
+
+            <li>Infrared sensors for line tracking functionality</li>
+        </ul>
+        The architecture integrates sensing, processing, and actuation so that environmental data can be translated into real-time motion commands.
+          </p>
+        </section>
+
+        <section class="project-section">
+          <h2>Technical Analysis</h2>
+          <p>
+            The control program continuously evaluates distance measurements from the ultrasonic sensor. 
+            When an obstacle is detected within a specified threshold distance, the system determines an alternate path by scanning surrounding directions using the rotating sensor. 
+            The Arduino processes sensor inputs and issues control signals to the motor driver to change vehicle direction.
+            This embedded control loop enables the vehicle to autonomously move forward, stop, or redirect itself based on environmental conditions.
+          </p>
+        </section>
+
+        <section class="project-section">
+          <h2>Validation and Performance</h2>
+          <p>
+            The system was assembled and tested through iterative hardware and software debugging. 
+            Early testing confirmed that the motor driver and sensors responded correctly to control signals. 
+            During troubleshooting, a damaged motor driver channel required the system to be reconfigured from a four-wheel drive design to a two-wheel drive configuration while maintaining functional navigation control.
+            System performance was evaluated based on obstacle detection accuracy, response time, and navigation reliability.
+          </p>
+        </section>
+
+        <section class="project-section">
+          <h2>Role and Impact</h2>
+          <p><strong>Team Member</strong></p>
+          <ul>
+            <li>Embedded system programming using Arduino</li>
+            <li>Integration of sensors, motors, and wireless communication modules</li>
+            <li>Hardware assembly and circuit wiring for robotic platform</li>
+            <li>Debugging and optimization of control logic for autonomous navigation</li>
+          </ul>
+        </section>
+
+        <section class="project-section">
+          <h2>Attachments</h2>
+          <div class="attachments">
+            <a href="documents/SmartCarArduinoReport.pdf" target="_blank"> Smart Car Arduino Report (PDF)</a>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

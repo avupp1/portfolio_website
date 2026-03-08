@@ -445,3 +445,29 @@ body::before{
 .contact-item a:hover{
   opacity: 0.8;
 }
+
+/* Mobile / small screens */
+@media (max-width: 600px){
+  .page{
+    align-items: center;     /* vertically center the card */
+    padding-top: 0;          /* remove the push-down */
+  }
+
+  /* optional: make card feel a bit bigger on mobile */
+  .card{
+    width: 92vw;
+  }
+
+  .card-inner{
+    padding: 18px;
+  }
+
+  .card-nav{
+    font-size: 26px;         
+    gap: 10px;
+  }
+
+  .card-photo img{
+    width: 120px;
+  }
+}
