@@ -59,18 +59,21 @@ body::before{
   gap: 18px;
   text-align: center;
   align-items: center;
+  position: relative;
 }
 .card{
-  background: rgba(255,255,255,0.94);
+  background: rgba(255,255,255,0.92);
   border-radius: 18px;
   padding: 14px;
   width: 700px;
   max-width: 92%;
   box-shadow:
-    0 18px 50px rgba(0,0,0,0.45),
-    0 0 28px rgba(255,255,255,0.08);
+    0 0px 20px rgba(255,255,255,0.25),
+    0 0 60px rgba(255,255,255,0.15);
   align-items: center;
   text-align: center;
+  position:relative;
+z-index:2;
 }
 @keyframes fadeIn{
   from{
@@ -80,6 +83,93 @@ body::before{
   to{
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+body::before{
+content:"";
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+
+background-image:radial-gradient(white 1px, transparent 1px);
+background-size:60px 60px;
+
+opacity:0.25;
+
+animation: starMove 120s linear infinite;
+
+z-index:-1;
+}
+
+@keyframes starMove{
+from{
+transform:translateY(0);
+}
+to{
+transform:translateY(-200px);
+}
+}
+.satellite-outline{
+  position:absolute;
+  top:22%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  width:320px;
+
+  opacity:0.25;
+
+  /* makes it white outline */
+  filter: brightness(0) invert(1);
+
+  animation: rotateSatellite 120s linear infinite;
+
+  z-index:0;
+}
+@keyframes rotateSatellite {
+
+  0%{
+  transform:translate(-50%, -50%) rotate(0deg);
+  }
+
+  100%{
+  transform:translate(-50%, -50%) rotate(360deg);
+  }
+
+}
+.satellite-outline{
+  position: absolute;
+  top: 18%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  opacity: 0.18;
+  filter: brightness(0) invert(1);
+  animation:
+    satelliteIntro 1.8s ease-out forwards,
+    rotateSatellite 120s linear infinite 1.8s;
+  z-index: 0;
+}
+
+@keyframes satelliteIntro{
+  0%{
+    opacity: 0;
+    transform: translate(-50%, -54%) scale(0.92);
+  }
+  100%{
+    opacity: 0.18;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+@keyframes rotateSatellite{
+  0%{
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100%{
+    transform: translate(-50%, -50%) rotate(360deg);
   }
 }
 
