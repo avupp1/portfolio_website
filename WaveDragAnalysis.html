@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <title>Wake Velocity & Drag Analysis in Wind Tunnel</title>
+  </head>
+
+  <body>
+    <div class="fade-in">
+      <header class="project-header">
+        <a class="back-btn" href="projects.html">← Back to Projects</a>
+        <h1 class="project-title">Wake Velocity & Drag Analysis in Wind Tunnel</h1>
+      </header>
+      <main class="project-card-detail">
+        <section class="project-section">
+          <h2>Executive Summary</h2>
+          <p>
+            A fluid mechanics experiment analyzing the wake behind a cylinder to determine drag force using a control volume approach. 
+            Velocity profiles were obtained from pitot-static measurements and used to evaluate momentum loss in the flow. 
+            Numerical integration was applied to compute drag across multiple inlet velocities, revealing a nonlinear relationship consistent with bluff body aerodynamics.
+          </p>
+        </section>
+
+        <section class="project-section">
+          <h2>Mission Context</h2>
+          <p>
+           Understanding drag forces on bluff bodies is critical in aerodynamic design. 
+           Direct force measurement can be difficult in experimental setups, so indirect methods based on wake analysis and momentum conservation provide a practical alternative.
+          </p>
+        </section>
+
+        <section class="project-section">
+          <h2>System Architecture</h2>
+          <p>A wind tunnel setup with a cylindrical test object and pitot-static probe was used to collect pressure data at multiple vertical positions downstream of the cylinder. 
+            The system captures wake velocity variations required for drag evaluation.
+          </p>
+        </section>
+
+        <section class="project-section">
+          <h2>Technical Analysis</h2>
+          <p>
+            Pressure data was converted to velocity using Bernoulli-based relationships. 
+            The velocity deficit in the wake was used to compute the integrand representing momentum loss. 
+            Numerical integration using the trapezoidal rule was performed to evaluate the drag force for each run.
+          </p>
+        </section>
+
+        <section class="project-section">
+          <h2>Validation and Performance</h2>
+          <p>
+            Results showed increasing drag with increasing inlet velocity, with a nonlinear trend observed in the data. 
+            The behavior aligns with expected aerodynamic theory, where drag is approximately proportional to the square of velocity for bluff bodies.
+          </p>
+        </section>
+
+        <section class="project-section">
+          <h2>Role and Impact</h2>
+          <p><strong>Individual Project</strong></p>
+          <ul>
+            <li>Data processing and unit conversion</li>
+            <li>Velocity profile computation</li>
+            <li>Numerical integration (trapezoidal rule)</li>
+            <li>Drag force evaluation and analysis</li>
+            <li>Graphing and result interpretation</li>
+          </ul>
+        </section>
+
+        <section class="project-section">
+          <h2>Attachments</h2>
+          <div class="attachments">
+            <a href="documents/FluidMechanicsLabReport_AvanthikaVuppala.pdf" target="_blank">Final Report (PDF)</a>
+            <a href="documents/FluidMechanics_LabReportData.xlsx" target="_blank">Wave and Drag Analysis Data (XLSX)</a>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
